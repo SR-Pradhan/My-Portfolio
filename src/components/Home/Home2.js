@@ -1,7 +1,7 @@
 import React from "react";
 import { SiGmail } from "react-icons/si";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.png";
+import myImg from "../../Assets/avatarV2.png";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
