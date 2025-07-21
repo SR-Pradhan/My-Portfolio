@@ -69,39 +69,40 @@ function Toolstack() {
   <p style={{color: "#a9a9a9"}}>Click below to view or download my resume and explore my professional journey.</p>
   
   <div style={{ position: "relative", zIndex: 2, marginBottom: "70px" }}>
-    <a
-      href="/My-Portfolio/MyResumeV2.pdf"
-      target="_blank"
-      rel="noopener noreferrer"
-      style={{
-        backgroundColor: "#5f287a",
-        color: "white",
-        padding: "5px 30px",
-        borderRadius: "9px",
-        display: "inline-flex",
-        alignItems: "center",
-        fontSize: "1.35rem",
-        fontWeight: 500,
-        textDecoration: "none",
-        cursor: "pointer",
-        zIndex: 3,
-        boxShadow: "0 6px 24px rgba(125,97,194,0.18)",
-        transition: "background 0.2s, transform 0.18s, box-shadow 0.2s"
-      }}
-      onMouseEnter={e => {
-        e.target.style.backgroundColor = "#8538aa";
-        e.target.style.transform = "translateY(-2px) scale(1.03)";
-        e.target.style.boxShadow = "0 12px 32px rgba(143,94,255,0.25)";
-      }}
-      onMouseLeave={e => {
-        e.target.style.backgroundColor = "#723092";
-        e.target.style.transform = "none";
-        e.target.style.boxShadow = "0 6px 24px rgba(125,97,194,0.18)";
-      }}
-    >
-      <FaDownload style={{ marginRight: "14px", fontSize: "1em"}} />
-      View Resume
-    </a>
+  <a
+  href={`${process.env.PUBLIC_URL}/MyResumeV2.pdf`}
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    backgroundColor: "#5f287a",
+    color: "white",
+    padding: "5px 30px",
+    borderRadius: "9px",
+    display: "inline-flex",
+    alignItems: "center",
+    fontSize: "1.35rem",
+    fontWeight: 500,
+    textDecoration: "none",
+    cursor: "pointer",
+    zIndex: 3,
+    boxShadow: "0 6px 24px rgba(125,97,194,0.18)",
+    transition: "background 0.2s, transform 0.18s, box-shadow 0.2s"
+  }}
+  onMouseEnter={e => {
+    e.target.style.backgroundColor = "#8538aa";
+    e.target.style.transform = "translateY(-2px) scale(1.03)";
+    e.target.style.boxShadow = "0 12px 32px rgba(143,94,255,0.25)";
+  }}
+  onMouseLeave={e => {
+    e.target.style.backgroundColor = "#723092";
+    e.target.style.transform = "none";
+    e.target.style.boxShadow = "0 6px 24px rgba(125,97,194,0.18)";
+  }}
+>
+  <FaDownload style={{ marginRight: "14px", fontSize: "1em"}} />
+  View Resume
+</a>
+
   </div>
 </div>
     </>
