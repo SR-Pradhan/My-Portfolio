@@ -70,7 +70,7 @@ function Toolstack() {
   
   <div style={{ position: "relative", zIndex: 2, marginBottom: "70px" }}>
   <a
-  href={`${process.env.PUBLIC_URL}/MyResumeV2.pdf`}
+  href="/My-Portfolio/MyResumeV2.pdf"
   target="_blank"
   rel="noopener noreferrer"
   style={{
