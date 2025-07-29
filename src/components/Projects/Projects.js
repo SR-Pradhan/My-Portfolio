@@ -1,10 +1,12 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Form } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import DoCure from "../../Assets/Projects/DoCure.png";
 import FreshFuel from "../../Assets/Projects/FreshFuel.png";
 import OnlineQuizWebApp from "../../Assets/Projects/OnlineQuizWebApp.png";
+import TicTacToe from "../../Assets/Projects/Tic-Tac-Toe.png";
+
 
 
 function Projects() {
@@ -47,6 +49,16 @@ function Projects() {
               title="Fresh Fuel"
               description="A health-focused e-commerce website built using Shopify. Fresh Fuel offers a curated range of gym supplements and nutrition products. Features include product listings, secure checkout, responsive design, and optimized user experience for fitness enthusiasts."
               ghLink="https://github.com/SR-Pradhan/Fresh-Fuel"             
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={TicTacToe}
+              isBlog={false}
+              title="Tic Tac Toe"
+              description="A fun and interactive web-based game based on classic Tic Tac Toe. It features a sleek, responsive design, real-time move tracking, win/draw detection. Ideal for casual gamers and beginners learning game logic."
+              ghLink="https://github.com/SR-Pradhan/Tic-Tac-Toe-Game"             
             />
           </Col>
         </Row>
