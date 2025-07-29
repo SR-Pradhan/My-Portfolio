@@ -48,4 +48,3 @@ Hi! I'm **Sruti Ranjan Pradhan**, a Full Stack Java Developer, Tech Club Preside
 ## 📝 License
 
 This project is open-source and available under the [MIT License](LICENSE).
-# Trigger rebuild
