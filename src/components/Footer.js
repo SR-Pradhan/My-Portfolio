@@ -1,17 +1,16 @@
 import React from "react";
-import { SiGmail } from "react-icons/si";
 import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
   AiOutlineMail,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si"; 
 
 function Footer() {
   let date = new Date();
   let year = date.getFullYear();
+
   return (
     <Container fluid className="footer">
       <Row>
@@ -23,6 +22,7 @@ function Footer() {
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
+
             <li className="social-icons">
               <a
                 href="https://github.com/SR-Pradhan"
@@ -33,6 +33,18 @@ function Footer() {
                 <AiFillGithub />
               </a>
             </li>
+
+            <li className="social-icons">
+              <a
+                href="https://leetcode.com/u/SR_Pradhan/"
+                style={{ color: "white" }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <SiLeetcode />
+              </a>
+            </li>
+
             <li className="social-icons">
               <a
                 href="https://www.linkedin.com/in/sruti-ranjan/"
@@ -43,15 +55,16 @@ function Footer() {
                 <FaLinkedinIn />
               </a>
             </li>
+
             <li className="social-icons">
-            <a
-  href="https://mail.google.com/mail/?view=cm&fs=1&to=pradhansr2003@gmail.com"
-  style={{ color: "white" }}
-  target="_blank"
-  rel="noreferrer"
->
-  <AiOutlineMail />
-</a>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=pradhansr2003@gmail.com"
+                style={{ color: "white" }}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <AiOutlineMail />
+              </a>
             </li>
 
           </ul>
